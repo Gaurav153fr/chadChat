@@ -32,8 +32,9 @@ signOut(auth).then(() => {
 
   return (
     <div>{user?
-      (<><div className=" rounded-full overflow-hidden w-10 h-10 mx-auto bg-white"><img src={user.photoURL||"/profile"} className="   object-cover overflow-hidden h-fit" alt="profile image" /></div>
-<p>Welcome !! <strong>{user.displayName}</strong><button onClick={handleSignOut} className="ml-2 bg-white/20 px-1 rounded-lg">LogOut</button></p>
+      (<><div className="bg-white/20 rounded-full  w-fit   flex px-2 my-1 sm:h-fit h-fit items-center">
+        <div className=" rounded-full overflow-hidden sm:w-4 sm:h-4 w-8  bg-white"><img src={user.photoURL||"/profile"} className="   object-cover overflow-hidden h-fit" alt="profile image" /></div><span className="w-2 mx-2">|</span><span className="text-sm">{user.displayName}</span><span className="w-2 mx-2">|</span> <button onClick={handleSignOut} className="text-sm">LogOut 📴</button></div>
+<p></p>
       </>):(<div ><div className="flex flex-col"><span>New here?</span><button type="button" className=" rounded-lg bg-blue-500 hover:bg-blue-400 p-2" onClick={handleSignIn}>Sign In</button></div></div>)}</div>
   );
 }

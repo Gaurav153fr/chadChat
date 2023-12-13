@@ -69,8 +69,8 @@ export default function Home() {
 
   return (
     <main className="">
-      {loadingUser ? (
-        <p>Loading...</p> // Render a loading indicator while the user state is being fetched
+      {loadingUser ? (<div className='w-full mt-32 justify-center flex items-center'>
+        <p className='bg-blue-800 px-2 py-1 rounded-full'>Loading...🔃</p></div> // Render a loading indicator while the user state is being fetched
       ) : (
         <>
           {chat.map((message, index) => (
