@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Technologies used
 * Next.js *(for frameWork)*
-* Firebase *(for handelink auth,storage,messages,Realtime Database)*
+* Firebase *(for handelink auth, storage, messages, Realtime Database)*
 ## Getting Started
 
 First, run the development server:
